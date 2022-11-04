@@ -2,10 +2,6 @@ import React from "react";
 import { TbArrowBigDownLines } from "react-icons/tb";
 import Housexmas from "../assets/housexmas.png";
 import ToastNotification from "./ToastNotification";
-import Wavebanner from "../assets/wavebanner.svg";
-import WavesSvg from "./WavesSvg";
-import Cookie from "../assets/cookie.png";
-import Letter from "../assets/Letter.png";
 
 function Hero() {
   return (
@@ -30,22 +26,9 @@ function Hero() {
         <div className='w-full md:w-3/4 p-4 m-auto relative'>
           <img src={Housexmas} alt='3d House with christmas lights' className='w-full h-auto' />
         </div>
-        {/* <div className='hidden lg:absolute -bottom-14 lg:bottom-24 right-8 lg:flex flex-col gap-4'>
+        <div className='hidden lg:absolute -bottom-14 lg:bottom-24 right-8 lg:flex flex-col gap-4'>
           <ToastNotification />
           <ToastNotification updatetype='previuos' date='24 000m above Norway, March 5.2, T-12min' timepassed={10} />
-        </div> */}
-      </div>
-      <div className='relative top-1 '>
-        <WavesSvg />
-        <div className='relative '>
-          <div className='absolute -top-[60px] md:-top-[200px]  lg:-top-[250px] xl:-top-[460px]'>
-            <div className='w-36 lg:w-44 xl:w-96 relative ml-4 rotate-12'>
-              <img src={Cookie} alt='galleta de gengibe' />
-            </div>
-            <div className='w-56 xl:w-96 translate-x-20 xl:translate-x-80 -translate-y-[80px] xl:-translate-y-[180px] '>
-              <img src={Letter} alt='carta' />
-            </div>
-          </div>
         </div>
       </div>
     </div>
