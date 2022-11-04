@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.speech-bubble {
+  position: relative;
+}
+
+.speech-bubble:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 52px solid transparent;
+  border-top-color: #fff;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: 0px;
+  margin-bottom: -52px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 15px;
+}
