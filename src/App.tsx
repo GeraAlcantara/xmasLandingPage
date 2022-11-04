@@ -8,7 +8,7 @@ import Wavebottom2 from "../src/assets/wavebottom2.svg";
 import Cookie from "../src/assets/cookie.png";
 import Letter from "../src/assets/Letter.png";
 import Socks from "../src/assets/socks.png";
-import Mittens from "../src/assets/Mittens.png";
+import Mittens from "../src/assets/mittens.png";
 import Grinch from "../src/assets/grinchProfile.png";
 import Homealone from "../src/assets/homealone.png";
 
