@@ -82,7 +82,7 @@ function App() {
           </header>
           <div className='flex flex-col md:flex-row justify-center items-center gap-4'>
             {/* cards */}
-            <div className='bg-brandPurple-500 h-[450px] w-[340px] rounded-2xl flex flex-col justify-center items-center origin-bottom-right rotate-0  lg:-rotate-2 transition-all duration-500'>
+            <div className='bg-brandPurple-500 h-[450px] w-[340px] rounded-2xl flex flex-col justify-center items-center origin-bottom-right rotate-0 lg:-rotate-2 lg:hover:scale-105 transition-all duration-500'>
               <div className='w-full h-auto flex justify-center'>
                 <img src={Socks} alt='calcetas de navidad' />
               </div>
@@ -93,7 +93,7 @@ function App() {
                 </p>
               </div>
             </div>
-            <div className='bg-brandPurple-500 h-[450px] w-[340px] rounded-2xl flex flex-col justify-center items-center origin-bottom-left rotate-0 lg:rotate-2 transition-all duration-500'>
+            <div className='bg-brandPurple-500 h-[450px] w-[340px] rounded-2xl flex flex-col justify-center items-center origin-bottom-left rotate-0 lg:rotate-2 lg:hover:scale-105 transition-all duration-500'>
               <div className='w-full h-auto flex justify-center'>
                 <img src={Mittens} alt='guantes de navidad' />
               </div>
