@@ -34,7 +34,7 @@ function Clients() {
       <SwiperSlide className='flex justify-center items-center'>
         <CardClients
           author='- Jack Skellington'
-          quote='“Creo que este año ha sido el menos horrible, ya que descubri SantaTracker ya no pierdo a santa cuando 🤣'
+          quote='“Creo que este año ha sido el menos horrible, ya que descubri SantaTracker ya no pierdo a Santa Claus 🤣'
           image={Jack}
           altTxt='Jack Skellington'
         ></CardClients>
