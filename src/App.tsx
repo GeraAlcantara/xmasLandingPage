@@ -9,11 +9,10 @@ import Cookie from "../src/assets/cookie.png";
 import Letter from "../src/assets/Letter.png";
 import Socks from "../src/assets/socks.png";
 import Mittens from "../src/assets/mittens.png";
-import Grinch from "../src/assets/grinchProfile.png";
-import Homealone from "../src/assets/homealone.png";
-import CardClients from "./components/CardClients";
+import Rudolf from "../src/assets/rudolf.png";
 import Footter from "./components/Footter";
 import Contact from "./components/Contact";
+import Clients from "./components/Clients";
 
 function App() {
   return (
@@ -118,23 +117,85 @@ function App() {
           <p className='text-sm font-light text-center'>The good and the bad reviews help us improve our service </p>
           <div className='bg-gray-900 w-10 h-[2px]'></div>
         </header>
-        <div className='flex flex-col md:flex-row items-center justify-center p-4 xl:p-16 gap-8 w-full '>
-          {/* card review clients */}
-          <CardClients
-            author='- El Grinch'
-            quote='No no no, nunca le manden carta a Santa Claus es un gordito mentiroso!!! 😡'
-            image={Grinch}
-            altTxt='El grinch'
-          ></CardClients>
-          <CardClients
-            author='- Kevin McCallister'
-            quote='Es Genial; pedí que no me olvidera mi familia otra vez en Navidad y funciono 🤣'
-            image={Homealone}
-            altTxt='Kevin McCallister'
-          ></CardClients>
+        <Clients />
+      </div>
+      {/* divider */}
+      <div className='-mt-[2px] rotate-180 '>
+        <img src={Wavebottom2} alt='wave' />
+      </div>
+      <div className='bg-brandPurple-600 relative '>
+        <div className='absolute -translate-y-3/4  lg:-translate-y-full left-8 w-1/3  lg:w-1/4 z-10'>
+          <img src={Rudolf} alt='rudolf' />
+        </div>
+        <div className='flex flex-col lg:flex-row justify-between container m-auto text-white'>
+          {/* left side */}
+          <div className='px-6 lg:px-4 py-16 w-full lg:w-1/2'>
+            <header className='flex flex-col gap-6'>
+              <h2 className='text-3xl md:text-6xl border-gray-200 mb-2 font-light w-[15ch]'>
+                A Section Strictly for <span className='text-brandRed '>the parents</span>
+              </h2>
+              <p>
+                Given the global and multinational nature of our service we prefer to only handle MX Pesos. The bright and bold future, here we come! Click on a
+                package to start.
+              </p>
+              <p>
+                Read more about our commitment to Mexican Peso & the Mexican economy.
+                <a className='text-brandRed' href='#'>
+                  here!
+                </a>
+              </p>
+            </header>
+            <div className='pl-2 relative before:w-[2px] before:h-full before:bg-white before:absolute before:top-0 before:-left-2 mt-20'>
+              <p>
+                You've never used Mexican Pesos before? No worries, we'll help you out!{" "}
+                <a className='text-brandRed' href='#'>
+                  Learn more
+                </a>
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima omnis quisquam corporis, tempore pariatur molestias libero? Est, nostrum maxime
+                non vero illum nam praesentium sit esse cupiditate labore libero reprehenderit?
+              </p>
+            </div>
+          </div>
+          {/* right side */}
+          <div className='flex justify-center items-center'>
+            <div className='p-4 lg:p-8 xl:p-16 md:p-2'>
+              <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 text-center text-gray-900'>
+                <div className='bg-white px-4 py-8 rounded-2xl flex flex-col gap-2 '>
+                  <h3 className='text-2xl font-medium'>The Starter Package</h3>
+                  <p className='text-sm'>2 adults + 2 children and a pet</p>
+                  <p className='font-normal text-6xl'>2000</p>
+                  <p className='text-xs text-gray-300'>MX Pesos</p>
+                </div>
+                <div className='bg-brandPurple-50 px-4 py-8 rounded-2xl flex flex-col gap-2 '>
+                  <h3 className='text-2xl font-medium'>Friends & Fam</h3>
+                  <p className='text-sm'>8 adults + 4 children and 2 pet</p>
+                  <p className='font-normal text-6xl'>4000</p>
+                  <p className='text-xs text-gray-300'>MX Pesos</p>
+                </div>
+                <div className='bg-brandPurple-100/80 px-4 py-8 rounded-2xl flex flex-col gap-2 '>
+                  <h3 className='text-2xl font-medium'>Kids Party Only</h3>
+                  <p className='text-sm'>Up to 16 children</p>
+                  <p className='font-normal text-6xl'>8000</p>
+                  <p className='text-xs text-gray-300'>MX Pesos</p>
+                </div>
+                <div className='bg-brandPurple-400 px-4 py-8 rounded-2xl flex flex-col gap-2 '>
+                  <h3 className='text-2xl font-medium'>The Company Giftaway</h3>
+                  <p className='text-sm'>Up to 24 adults</p>
+                  <p className='font-normal text-6xl'>10000</p>
+                  <p className='text-xs text-gray-300'>MX Pesos</p>
+                </div>
+              </div>
+              <p className='text-white text-center mt-16'>
+                The current exchange rate is $1 usd dollar = <span className='font-bold'>$18.76 mx pesos</span>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div className='-mt-[2px] rotate-180 '>
+      {/* divider */}
+      <div className='-mt-[2px] '>
         <img src={Wavebottom2} alt='wave' />
       </div>
       <Contact />
