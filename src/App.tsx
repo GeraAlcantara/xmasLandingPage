@@ -11,7 +11,9 @@ import Socks from "../src/assets/socks.png";
 import Mittens from "../src/assets/mittens.png";
 import Grinch from "../src/assets/grinchProfile.png";
 import Homealone from "../src/assets/homealone.png";
-import Clients from "./components/Clients";
+import CardClients from "./components/CardClients";
+import Footter from "./components/Footter";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -83,7 +85,7 @@ function App() {
           </header>
           <div className='flex flex-col md:flex-row justify-center items-center gap-4'>
             {/* cards */}
-            <div className='bg-brandPurple-500 h-[450px] w-[340px] rounded-2xl flex flex-col justify-center items-center origin-bottom-right rotate-0 lg:-rotate-2 lg:hover:scale-105 transition-all duration-500'>
+            <div className='bg-brandPurple-500 h-[450px] w-full md:w-[340px] rounded-2xl flex flex-col justify-center items-center origin-bottom-right rotate-0 lg:-rotate-2 lg:hover:scale-105 transition-all duration-500'>
               <div className='w-full h-auto flex justify-center'>
                 <img src={Socks} alt='calcetas de navidad' />
               </div>
@@ -94,7 +96,7 @@ function App() {
                 </p>
               </div>
             </div>
-            <div className='bg-brandPurple-500 h-[450px] w-[340px] rounded-2xl flex flex-col justify-center items-center origin-bottom-left rotate-0 lg:rotate-2 lg:hover:scale-105 transition-all duration-500'>
+            <div className='bg-brandPurple-500 h-[450px] w-full md:w-[340px] rounded-2xl flex flex-col justify-center items-center origin-bottom-left rotate-0 lg:rotate-2 lg:hover:scale-105 transition-all duration-500'>
               <div className='w-full h-auto flex justify-center'>
                 <img src={Mittens} alt='guantes de navidad' />
               </div>
@@ -118,34 +120,25 @@ function App() {
         </header>
         <div className='flex flex-col md:flex-row items-center justify-center p-4 xl:p-16 gap-8 w-full '>
           {/* card review clients */}
-          <div className='flex flex-col w-full md:flex-row items-center md:min-h-[216px] xl:min-h-0 gap-4 p-8 bg-brandPurple-600 rounded-2xl md:w-1/2 justify-center'>
-            {/* Profile */}
-            <div className='w-20 h-20 flex justify-center rounded-full overflow-hidden  bg-brandPurple-400'>
-              <img className='object-cover ' src={Grinch} alt='Grinch' />
-            </div>
-            {/* review */}
-            <blockquote className='flex-1 text-center md:text-left'>
-              <p className='text-brandPurple-50 text-xl mb-2'>No no no, nunca le manden carta a Santa Claus es un gordito mentiroso!!! 😡</p>
-              <cite className='text-2xl text-brandPurple-400'>- El Grinch</cite>
-            </blockquote>
-          </div>
-          {/* card 2 */}
-          <div className='flex flex-col w-full md:flex-row items-center md:min-h-[216px] xl:min-h-0 gap-4 p-8 bg-brandPurple-600 rounded-2xl md:w-1/2 justify-center'>
-            {/* Profile */}
-            <div className='w-20 h-20 rounded-full overflow-hidden  bg-brandPurple-400'>
-              <img className='object-cover ' src={Homealone} alt='mi pobre angelito' />
-            </div>
-            {/* review */}
-            <blockquote className='flex-1 text-center md:text-left'>
-              <p className='text-brandPurple-50 text-xl mb-2'>Es Genial; pedí que no me olvidera mi familia otra vez en Navidad y funciono 🤣 </p>
-              <cite className='text-2xl text-brandPurple-400'>- Kevin McCallister</cite>
-            </blockquote>
-          </div>
+          <CardClients
+            author='- El Grinch'
+            quote='No no no, nunca le manden carta a Santa Claus es un gordito mentiroso!!! 😡'
+            image={Grinch}
+            altTxt='El grinch'
+          ></CardClients>
+          <CardClients
+            author='- Kevin McCallister'
+            quote='Es Genial; pedí que no me olvidera mi familia otra vez en Navidad y funciono 🤣'
+            image={Homealone}
+            altTxt='Kevin McCallister'
+          ></CardClients>
         </div>
       </div>
       <div className='-mt-[2px] rotate-180 '>
         <img src={Wavebottom2} alt='wave' />
       </div>
+      <Contact />
+      <Footter />
     </div>
   );
 }
