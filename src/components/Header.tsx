@@ -45,7 +45,7 @@ function Header() {
         <div className={`${showMenu ? "block" : "hidden"} lg:hidden `}>
           <div className='bg-brandPurple-700 absolute top-0 left-0 w-full min-h-screen z-50'>
             <div className='container m-auto'>
-              <div className=' flex justify-end py-2 m-auto'>
+              <div className=' flex justify-end py-2 px-6 md:px-0 m-auto'>
                 <button onClick={handleShowMenu} className=' bg-brandPurple-400 rounded-lg text-gray-900 '>
                   <span className='sr-only'>close</span>
                   <RiCloseFill className=' text-2xl p-2 box-content' />
