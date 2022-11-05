@@ -80,7 +80,6 @@ function Header() {
                 </button>
               </div>
             </div>
-            {/* close button */}
           </div>
         </div>
       </div>
