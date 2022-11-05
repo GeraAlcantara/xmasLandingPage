@@ -11,6 +11,7 @@ import Socks from "../src/assets/socks.png";
 import Mittens from "../src/assets/mittens.png";
 import Grinch from "../src/assets/grinchProfile.png";
 import Homealone from "../src/assets/homealone.png";
+import Clients from "./components/Clients";
 
 function App() {
   return (
