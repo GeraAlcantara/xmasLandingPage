@@ -20,14 +20,14 @@ function Footter() {
               <a href='#'>Home</a>
             </li>
             <li className=' text-xl text-gray-900 font-normal '>
-              <a href='#'>About</a>
+              <a href='#poem'>Poem</a>
             </li>
             <li className=' text-xl text-gray-900 font-normal '>
-              <a href='#'>My Whislist</a>
+              <a href='#getintouch'>Get in touch</a>
             </li>
             <li className=' text-xl text-gray-900 font-normal '>
-              <a href='#'>
-                COVID Restrictions <span className='bg-brandRed  px-3 py-1 ml-1 font-medium rounded-full leading-tight text-sm'>New</span>
+              <a href='#forparents'>
+                For the parents <span className='bg-brandRed  px-3 py-1 ml-1 font-medium rounded-full leading-tight text-sm'>New</span>
               </a>
             </li>
           </ul>
