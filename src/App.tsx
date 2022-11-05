@@ -166,25 +166,25 @@ function App() {
                   <h3 className='text-2xl font-medium'>The Starter Package</h3>
                   <p className='text-sm'>2 adults + 2 children and a pet</p>
                   <p className='font-normal text-6xl'>2000</p>
-                  <p className='text-xs text-gray-300'>MX Pesos</p>
+                  <p className='text-xs text-gray-900'>MX Pesos</p>
                 </div>
                 <div className='bg-brandPurple-50 px-4 py-8 rounded-2xl flex flex-col gap-2 '>
                   <h3 className='text-2xl font-medium'>Friends & Fam</h3>
                   <p className='text-sm'>8 adults + 4 children and 2 pet</p>
                   <p className='font-normal text-6xl'>4000</p>
-                  <p className='text-xs text-gray-300'>MX Pesos</p>
+                  <p className='text-xs text-gray-900'>MX Pesos</p>
                 </div>
                 <div className='bg-brandPurple-100/80 px-4 py-8 rounded-2xl flex flex-col gap-2 '>
                   <h3 className='text-2xl font-medium'>Kids Party Only</h3>
                   <p className='text-sm'>Up to 16 children</p>
                   <p className='font-normal text-6xl'>8000</p>
-                  <p className='text-xs text-gray-300'>MX Pesos</p>
+                  <p className='text-xs text-gray-900'>MX Pesos</p>
                 </div>
                 <div className='bg-brandPurple-400 px-4 py-8 rounded-2xl flex flex-col gap-2 '>
                   <h3 className='text-2xl font-medium'>The Company Giftaway</h3>
                   <p className='text-sm'>Up to 24 adults</p>
                   <p className='font-normal text-6xl'>10000</p>
-                  <p className='text-xs text-gray-300'>MX Pesos</p>
+                  <p className='text-xs text-gray-900'>MX Pesos</p>
                 </div>
               </div>
               <p className='text-white text-center mt-16'>
