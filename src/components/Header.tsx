@@ -21,14 +21,14 @@ function Header() {
               <a href='#'>Home</a>
             </li>
             <li className='text-white text-xl '>
-              <a href='#'>About</a>
+              <a href='#poem'>Poem</a>
             </li>
             <li className='text-white text-xl '>
-              <a href='#'>My Whislist</a>
+              <a href='#getintouch'>Get in touch</a>
             </li>
             <li className='text-white text-xl '>
-              <a href='#'>
-                COVID Restrictions <span className='bg-brandRed text-white px-3 py-1 ml-1 font-medium rounded-full leading-tight text-sm'>New</span>
+              <a href='#forparents'>
+                For the parents <span className='bg-brandRed text-white px-3 py-1 ml-1 font-medium rounded-full leading-tight text-sm'>New</span>
               </a>
             </li>
           </ul>
@@ -43,9 +43,9 @@ function Header() {
         </button>
         {/* mobile menu */}
         <div className={`${showMenu ? "block" : "hidden"} lg:hidden `}>
-          <div className='bg-brandPurple-700 absolute top-0 left-0 w-full min-h-screen z-50'>
-            <div className='container m-auto'>
-              <div className=' flex justify-end py-2 px-6 md:px-0 m-auto'>
+          <div className='bg-brandPurple-700 fixed top-0 left-0 w-full min-h-screen py-2 px-6 lg:py-8 z-50'>
+            <div className='container m-auto '>
+              <div className=' flex justify-end  m-auto'>
                 <button onClick={handleShowMenu} className=' bg-brandPurple-400 rounded-lg text-gray-900 '>
                   <span className='sr-only'>close</span>
                   <RiCloseFill className=' text-2xl p-2 box-content' />
@@ -53,17 +53,23 @@ function Header() {
               </div>
               <ul className='flex flex-col gap-4 font-light h-[calc(100vh-200px)] justify-around items-center'>
                 <li className='text-white text-xl '>
-                  <a href='#'>Home</a>
+                  <a onClick={handleShowMenu} href='#'>
+                    Home
+                  </a>
                 </li>
                 <li className='text-white text-xl '>
-                  <a href='#'>About</a>
+                  <a onClick={handleShowMenu} href='#poem'>
+                    Poem
+                  </a>
                 </li>
                 <li className='text-white text-xl '>
-                  <a href='#'>My Whislist</a>
+                  <a onClick={handleShowMenu} href='#getintouch'>
+                    Get in touch{" "}
+                  </a>
                 </li>
                 <li className='text-white text-xl '>
-                  <a href='#'>
-                    COVID Restrictions <span className='bg-brandRed text-white px-3 py-1 ml-1 font-medium rounded-full leading-tight text-sm'>New</span>
+                  <a onClick={handleShowMenu} href='#forparents'>
+                    For the parents <span className='bg-brandRed text-white px-3 py-1 ml-1 font-medium rounded-full leading-tight text-sm'>New</span>
                   </a>
                 </li>
               </ul>

@@ -16,7 +16,7 @@ function Hero() {
           </h1>
           <div className='text-xl mb-4'>
             <p>Plenty of gifts to go around if you've been good!</p>
-            <p>Do you have a poen or dance ready</p>
+            <p>Do you have a poem or dance ready</p>
           </div>
           <div className='flex items-center text-white gap-1'>
             <TbArrowBigDownLines />

@@ -5,3 +5,6 @@
 .swiper-button-prev {
   color: #421d70 !important;
 }
+html {
+  scroll-behavior: smooth;
+}

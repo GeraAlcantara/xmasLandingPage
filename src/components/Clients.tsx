@@ -15,26 +15,26 @@ import CardClients from "./CardClients";
 function Clients() {
   return (
     <Swiper navigation={true} modules={[Navigation]} className='w-[90%] md:w-full m-auto mt-16'>
+      <SwiperSlide className='flex justify-center items-center'>
+        <CardClients
+          author='- Kevin McCallister'
+          quote={`It's great; I asked my family not to forget me again at Christmas and it worked!😉`}
+          image={Homealone}
+          altTxt='Kevin McCallister'
+        ></CardClients>
+      </SwiperSlide>
       <SwiperSlide className='flex justify-center items-center '>
         <CardClients
           author='- El Grinch'
-          quote='No no no, nunca le manden carta a Santa Claus es un gordito mentiroso!!! 😡'
+          quote={`No no no, never send a letter to Santa Claus, he's a fat liar!!! 😡`}
           image={Grinch}
           altTxt='El grinch'
         ></CardClients>
       </SwiperSlide>
       <SwiperSlide className='flex justify-center items-center'>
         <CardClients
-          author='- Kevin McCallister'
-          quote='Es Genial; pedí que no me olvidarán mi familia otra vez en Navidad y funciono 🤣'
-          image={Homealone}
-          altTxt='Kevin McCallister'
-        ></CardClients>
-      </SwiperSlide>
-      <SwiperSlide className='flex justify-center items-center'>
-        <CardClients
           author='- Jack Skellington'
-          quote='“Creo que este año ha sido el menos horrible, ya que descubri SantaTracker ya no pierdo a Santa Claus 🤣'
+          quote={`I think this year has been the least horrible, since I discovered SantaTracker I don't lose Santa Claus anymore 🤣`}
           image={Jack}
           altTxt='Jack Skellington'
         ></CardClients>

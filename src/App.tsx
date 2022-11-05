@@ -23,7 +23,7 @@ function App() {
       <div className='-mb-[1px]'>
         <img src={WaveBanner} alt='wave' />
       </div>
-      <section className=' bg-brandPurple-50'>
+      <section className=' bg-brandPurple-50' id='poem'>
         {/* Imagenes flotantes */}
         <div className='relative w-1/3 '>
           <div className='relative top-0 -translate-y-1/4 md:-translate-y-2/4 xl:-translate-y-1/4 transition-all duration-500'>
@@ -75,7 +75,7 @@ function App() {
         <img src={Wavebottom} alt='wave' />
       </div>
       {/* get in touch  */}
-      <section className='text-white'>
+      <section className='text-white' id='getintouch'>
         <div className='flex flex-col items-center justify-center p-4 xl:p-16 gap-8 w-full '>
           <header className='flex flex-col gap-1 justify-center items-center'>
             <h2 className='text-center text-4xl md:text-3xl border-gray-200 font-semibold mb-2'>Get in touch with Santa Claus</h2>
@@ -110,20 +110,20 @@ function App() {
       <div className='-mb-[1px] '>
         <img src={Wavebottom2} alt='wave' />
       </div>
-      {/* clientes Grinch, Mi pobre angelito, Jack the nightmare before chrismas, pawpatrol, buenaidea mala idea Animanics */}
-      <div className='bg-brandPurple-50'>
+
+      <section className='bg-brandPurple-50'>
         <header className='flex flex-col gap-1 justify-center items-center'>
           <h2 className='text-center text-3xl md:text-4xl border-gray-200 font-bold mb-2'>Our clients</h2>
           <p className='text-sm font-light text-center'>The good and the bad reviews help us improve our service </p>
           <div className='bg-gray-900 w-10 h-[2px]'></div>
         </header>
         <Clients />
-      </div>
+      </section>
       {/* divider */}
       <div className='-mt-[2px] rotate-180 '>
         <img src={Wavebottom2} alt='wave' />
       </div>
-      <div className='bg-brandPurple-600 relative '>
+      <section className='bg-brandPurple-600 relative ' id='forparents'>
         <div className='absolute -translate-y-3/4  lg:-translate-y-full left-8 w-1/3  lg:w-1/4 z-10'>
           <img src={Rudolf} alt='rudolf' />
         </div>
@@ -141,7 +141,7 @@ function App() {
               <p>
                 Read more about our commitment to Mexican Peso & the Mexican economy.
                 <a className='text-brandRed' href='#'>
-                  here!
+                  &nbsp;here!.
                 </a>
               </p>
             </header>
@@ -193,7 +193,7 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
       {/* divider */}
       <div className='-mt-[2px] '>
         <img src={Wavebottom2} alt='wave' />
