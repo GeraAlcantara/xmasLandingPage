@@ -64,7 +64,7 @@ function Header() {
                 </li>
                 <li className='text-white text-xl '>
                   <a onClick={handleShowMenu} href='#getintouch'>
-                    Get in touch{" "}
+                    Get in touch
                   </a>
                 </li>
                 <li className='text-white text-xl '>
