@@ -14,7 +14,7 @@ import CardClients from "./CardClients";
 
 function Clients() {
   return (
-    <Swiper navigation={true} modules={[Navigation]} className='w-[90%] md:w-full m-auto mt-16'>
+    <Swiper navigation={true} modules={[Navigation]} className='w-full m-auto mt-16'>
       <SwiperSlide className='flex justify-center items-center'>
         <CardClients
           author='- Kevin McCallister'

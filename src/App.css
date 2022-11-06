@@ -5,6 +5,17 @@
 .swiper-button-prev {
   color: #421d70 !important;
 }
+/* media query md */
+@media (min-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #421d70 !important;
+  }
+}
+.swiper-wrapper {
+  align-items: center;
+  justify-items: center;
+}
 html {
   scroll-behavior: smooth;
 }

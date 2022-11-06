@@ -9,9 +9,9 @@ interface CardClientsProps {
 
 function CardClients({ author, quote, image, altTxt }: CardClientsProps) {
   return (
-    <div className='flex flex-col w-full lg:flex-row items-center md:min-h-[276px] xl:min-h-0 gap-4 p-8 bg-brandPurple-600 rounded-2xl md:w-1/2 justify-center'>
+    <div className='flex flex-col w-[75%] lg:flex-row items-center portrait:min-h-[372px] portrait:md:min-h-0  md:min-h-0 gap-4 p-8 bg-brandPurple-600 rounded-2xl md:w-1/2 justify-center'>
       {/* Profile */}
-      <div className='w-20 h-20 flex justify-center rounded-full overflow-hidden  bg-brandPurple-400'>
+      <div className='w-20 h-20 flex justify-center rounded-full overflow-hidden  bg-brandPurple-400 flex-shrink-0'>
         <img className='object-cover ' src={image} alt={altTxt} />
       </div>
       {/* review */}
