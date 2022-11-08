@@ -12,7 +12,7 @@ function Header() {
   };
 
   return (
-    <div className='bg-brandPurple-700 py-2 px-6 lg:py-8'>
+    <div className='bg-brandPurple-700 py-2 px-6 lg:py-8 fixed top-0 left-0 w-full z-50 md:static'>
       <div className='container flex justify-between m-auto'>
         <Logo />
         <nav className=' hidden lg:flex items-center gap-4 '>
@@ -42,7 +42,7 @@ function Header() {
           <RiMenuLine className=' text-2xl p-2 box-content' />
         </button>
         {/* mobile menu */}
-        <div className={`${showMenu ? "block" : "hidden"} lg:hidden `}>
+        <div className={`${showMenu ? "block" : "hidden"} lg:hidden  `}>
           <div className='bg-brandPurple-700 fixed top-0 left-0 w-full min-h-screen py-2 px-6 lg:py-8 z-50'>
             <div className='container m-auto '>
               <div className=' flex justify-end  m-auto'>
